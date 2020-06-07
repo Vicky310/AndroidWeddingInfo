@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="start">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission
+        android:name="start.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="start.permission.MAPS_RECEIVE"/>
+        <!--
+             The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+             Google Maps Android API v2, but you must specify either coarse or fine
+             location permissions for the 'MyLocation' functionality.
+        -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_s"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        >
+
+            <!--
+                 The API key for Google Maps-based APIs is defined as a string resource.
+                 (See the file "res/values/google_maps_api.xml").
+                 Note that the API key is linked to the encryption key used to sign the APK.
+                 You need a different API key for each encryption key, including the release key that is used to
+                 sign the APK for publishing.
+                 You can define the keys for the debug and release targets in src/debug/ and src/release/.
+            -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <activity android:name=".HomePage.HomePageInfo"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".splashscreen">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".AboutUs.AlarmActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Location.LocationActivity"></activity>
+        <activity android:name=".AboutUs.VideoActivity"></activity>
+        <activity android:name=".AboutUs.AboutActivity"></activity>
+        <activity android:name=".Issues.IsuuesActivity">
+
+            <intent-filter android:label="@string/transport">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data android:scheme="http"
+                    android:host="www.redbus.com"
+                    android:pathPrefix="/" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+            <intent-filter android:label="@string/transport">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "example://gizmos” -->
+                <data android:scheme="example"
+                    android:host="gizmos" />
+            </intent-filter>
+
+
+
+</activity>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/AIzaSyAf39SdgMhtoDqh4QYfqwRAejJCXTuLI" />
+
+        <activity
+            android:name="start.Location.MapsActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".AboutUs.NotifyService" />
+        <service android:name=".AboutUs.ScheduleService" />
+    </application>
+
+</manifest>

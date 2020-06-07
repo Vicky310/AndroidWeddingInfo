@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">HaSh</string>
+
+    <string name="open_dra">Open Drawer</string>
+    <string name="close_dra">Close Drawer</string>
+    <string name="content_dec">Image View</string>
+    <string name="blank_text">text</string>
+    <string name="moreapp">More Apps</string>
+    <string name="dis">About this app</string>
+    <string name="share">Share it</string>
+    <string name="commonNot">NAME</string>
+    <string name="transport">Public</string>
+    <string name="welcome">Button click worked</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="P1">
+        <![CDATA[
+    Sample
+
+         ]]>
+</string>
+
+    <string name="p2_text1">
+          <![CDATA[
+
+       <b> From Maatuthavani bustand : </b>
+       <br>* Board any bus to Tirunelveli,Kovilpatti,Sivakasi or Rajapalayam and get down at Tirumangalam.
+       <br>or
+       <br>* Local buses: 48Y,48AI,49M.
+       <br>* Buses are available at all timings.
+         ]]>
+
+    </string>
+
+    <string name="p2_text">
+          <![CDATA[
+
+       <b> From Madurai railway station : </b>
+       <br>* Routes: 48Y,48AI,49M (From bus stop opposite to the station main entrance)
+
+         ]]>
+
+    </string>
+    <string name="p2_text2">
+        <![CDATA[
+        <b>From Periyar bus stand:</b>
+        <br>*Routes: 48A Exp,48A FAST LSS,48/3,48PT,48AG
+        ]]>
+    </string>
+    <string name="p2_text3">
+        <![CDATA[
+        <b>From Araplayam bus stand:</b>
+        <br>*Routes: 48,48/1,48AD
+        ]]>
+    </string>
+    <string name="p2_text4">
+        <![CDATA[
+        <b>Follow the navigate option to reach the venue</b>
+        <br>or
+        <br><b>Check with the people in the contacts for guidance.</b>
+        ]]>
+    </string>
+
+    <string-array name="ds">
+        <item>Support</item>
+        <item>Location</item>
+        <item>Issues</item>
+        <item>Links</item>
+        <item>About us</item>
+    </string-array>
+
+    <string-array name="s1">
+        <item>Hari Prasaadh</item>
+        <item>Gokul Kalidas</item>
+        <item>Shree Byravi</item>
+        <item>Vicky</item>
+    </string-array>
+
+    <string-array name="s2">
+        <item>+91 9952073849</item>
+        <item>+91 9791326512</item>
+        <item>+91 8124710804</item>
+        <item>+91 9865981272</item>
+    </string-array>
+
+</resources>
